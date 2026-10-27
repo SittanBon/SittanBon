@@ -58,6 +58,27 @@ flowchart LR
 
 The responsible-AI review asks the learner to check risk, injection, hallucination, bias, and data protection; it does not declare a prompt safe. The browser stores drafts locally. [Try Prompt Smash!](https://sittanbon.github.io/prompt-smash/) · [Read the code](https://github.com/SittanBon/prompt-smash).
 
+## Mochi Pop — public game loop
+
+
+Mochi Pop is a playable Expo and React Native project with a browser preview. The core loop connects tactile play to pet care and progression; state is saved locally. The leaderboard is optional and requires Firebase configuration.
+
+
+```mermaid
+flowchart LR
+    A[Pop mochi or care for pet] --> B[Game rules update taps, needs and activity]
+    B --> C[Earn candy and XP]
+    C --> D[Grow, reach milestones and unlock looks]
+    D --> E[Save progress on device]
+    E --> F[Return to play]
+    F --> A
+    E -. if Firebase is configured .-> G[Optional live leaderboard]
+```
+
+
+The browser preview uses a short stroll instead of the phone step counter, and vibration depends on browser support. Future quests, teams and app-store release are not presented as shipped features. [Play the browser preview](https://sittanbon.github.io/mochi-pop/) · [Read the code](https://github.com/SittanBon/mochi-pop).
+
+
 ## Bierpreis — public price-reporting flow
 
 This is the flow implemented in the public React front end and Express API. Submitted information stays pending until an administrator reviews it.
