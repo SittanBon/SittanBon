@@ -12,7 +12,7 @@ I turn emerging technology into creative ideas and practical solutions people wa
 
 ### Technical skills in practice
 
-**n8n · AI workflow design · React · TypeScript · JavaScript · Node.js · Express · SQLite · REST APIs · accessible interfaces · testing**
+**n8n · AI workflow design · React · React Native · Expo · TypeScript · JavaScript · gamification · Node.js · Express · SQLite · REST APIs · accessible interfaces · testing**
 
 I use these tools to move from a useful idea to a tested product or workflow. **[Explore the visual skills page →](https://sittanbon.github.io/skills.html)** Each skill links to public code or a clearly labeled case study.
 
@@ -27,10 +27,14 @@ Interviewed 30+ SME finance users, tested OCR extraction on 500+ receipts, and d
 **03 / Prompt Smash!** · Independent build  
 Built an interactive guide that teaches prompt design through four journeys, with a responsible-AI review in every journey. It runs in the browser and keeps learners' drafts on their device. **[Try it →](https://sittanbon.github.io/prompt-smash/)** · [View code](https://github.com/SittanBon/prompt-smash)
 
-**04 / Bierpreis** · Independent MVP  
+**04 / Mochi Pop 🍡** · Playable independent build  
+Built a cross-platform stress-relief tapping game with Expo and React Native. Combos, candy, XP, pet care and unlockable looks create a playful loop; progress saves on the device. **[Play the browser preview →](https://sittanbon.github.io/mochi-pop/)** · [View code](https://github.com/SittanBon/mochi-pop)
+
+
+**05 / Bierpreis** · Independent MVP  
 Built a Munich beer-price explorer with a map, search and filters, price-freshness signals, and community reporting. **[View project →](https://github.com/SittanBon/muenchner-bierpreis)**
 
-**05 / QR Event Management** · Internal pilot and market learning  
+**06 / QR Event Management** · Internal pilot and market learning  
 Piloted a QR event product, licensed it to five market competitors, and used their feedback to improve it. The broader CRM, live-content, and gamification journey is a separate concept. **[Read the case study →](https://sittanbon.github.io/event-engagement-case-study.html)**
 
 **[See the project workflow diagrams →](WORKFLOWS.md)**
