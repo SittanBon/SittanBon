@@ -19,7 +19,7 @@ flowchart LR
     G --> H[Roll out to 4 DACH locations]
 ```
 
-The reported standard campaign cycle moved from about two weeks to one in the pilot. The exact internal automation steps are not public, so the diagram does not present a node-by-node n8n export. [Read the case study](https://sittanbon.github.io/genai-workflow-case-study.html).
+After the rollout, content creation time moved from about four weeks to 1.5 weeks. The exact internal automation steps are not public, so the diagram does not present a node-by-node n8n export. [Read the case study](https://sittanbon.github.io/genai-workflow-case-study.html).
 
 ## AI Expense Intelligence — internal pilot decision flow
 
@@ -29,8 +29,12 @@ The pilot tested receipt OCR and confidence-based routing. The broader finance d
 flowchart TD
     A[Capture receipt evidence] --> B[Extract fields with OCR]
     B --> C[Propose transaction match]
-    C --> D{Confidence score}
-    D -->|Below 75 percent| E[Reject or recapture evidence]
+    C --> X{Duplicate or unclear photo?}
+    X -->|Yes| E[Reject or recapture evidence]
+    X -->|No| Y{Items match the project?}
+    Y -->|No| F
+    Y -->|Yes| D{Confidence score}
+    D -->|Below 75 percent| E
     D -->|75 to 95 percent| F[Finance specialist reviews]
     D -->|Above 95 percent| G{Bill above THB 20,000?}
     G -->|Yes| F
@@ -56,7 +60,7 @@ flowchart LR
     H -. restore .-> B
 ```
 
-The responsible-AI review asks the learner to check risk, injection, hallucination, bias, and data protection; it does not declare a prompt safe. The browser stores drafts locally. [Try Prompt Smash!](https://sittanbon.github.io/prompt-smash/) · [Read the code](https://github.com/SittanBon/prompt-smash).
+The responsible-AI review asks the learner to check risk, injection, hallucination, bias, and data protection; it does not declare a prompt safe. The browser stores drafts locally. [Try Prompt Smash!](https://sittanbon.github.io/prompt-smash/) | [Read the code](https://github.com/SittanBon/prompt-smash).
 
 ## Mochi Pop — public game loop
 
@@ -76,7 +80,7 @@ flowchart LR
 ```
 
 
-The browser preview uses a short stroll instead of the phone step counter, and vibration depends on browser support. Future quests, teams and app-store release are not presented as shipped features. [Play the browser preview](https://sittanbon.github.io/mochi-pop/) · [Read the code](https://github.com/SittanBon/mochi-pop).
+The browser preview uses a short stroll instead of the phone step counter, and vibration depends on browser support. Future quests, teams and app-store release are not presented as shipped features. [Play the browser preview](https://sittanbon.github.io/mochi-pop/) | [Read the code](https://github.com/SittanBon/mochi-pop).
 
 
 ## Bierpreis — public price-reporting flow
@@ -124,4 +128,4 @@ flowchart LR
     E --> F[GitHub Pages]
 ```
 
-[Explore the portfolio](https://sittanbon.github.io/) · [Read the repository](https://github.com/SittanBon/sittanbon.github.io).
+[Explore the portfolio](https://sittanbon.github.io/) | [Read the repository](https://github.com/SittanBon/sittanbon.github.io).
