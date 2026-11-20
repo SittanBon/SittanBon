@@ -27,8 +27,8 @@ Interviewed 30+ SME finance users, tested OCR extraction on 500+ receipts, and d
 **03 / Bierpreis** | Live product  
 A bilingual Munich beer-price map at **[bierpreis.beer](https://bierpreis.beer/)**: around 180 venues across six districts, community price reports with an admin review queue, honest price-freshness labels, and a mobile-first map and list. **[View code](https://github.com/SittanBon/muenchner-bierpreis)**
 
-**04 / Lead-intelligence automation** | Team project in development (WBS CODING SCHOOL)  
-An n8n and LLM-agent workflow for a training-consulting firm. It collects client notes from several sources (OneNote, Google Keep and similar), turns them into structured lead profiles, scores and prioritises each lead, and routes it to the responsible consultant.
+**04 / Trade Fair Assistant** | Course project, working prototype (WBS CODING SCHOOL)  
+An n8n workflow that turns messy trade fair notes into a researched, scored lead card in the salesperson's inbox. An LLM structures the note, an AI agent researches the company with sources, and fixed rules calculate the score, four grades and next steps. It flags uncertain contacts, duplicates and possible company mix-ups, and it never e-mails the lead. Tested with fictional notes. **[View code and test learnings](https://github.com/SittanBon/trade-fair-assistant)**
 
 **05 / Prompt Smash!** | Independent build  
 An interactive guide that teaches prompt design through four journeys, with a responsible-AI review in every journey. It runs in the browser and keeps learners' drafts on their device. **[Try it](https://sittanbon.github.io/prompt-smash/)** | [View code](https://github.com/SittanBon/prompt-smash)

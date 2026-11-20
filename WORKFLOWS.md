@@ -44,6 +44,24 @@ flowchart TD
 
 The thresholds describe Bon's stated pilot policy, including human review at exactly 75%. The case-study confidence factors and interface wireframes illustrate a possible product design; their precise weights are not claimed as pilot settings. [Read the case study](https://sittanbon.github.io/finance-ai-case-study.html).
 
+## Trade Fair Assistant — public n8n workflow
+
+A course project built and tested with five fictional trade fair notes. The AI reads the note and researches the company; fixed rules in code decide the score, grade and flags. The salesperson receives the result and makes every customer contact.
+
+```mermaid
+flowchart LR
+    A[Salesperson pastes note into form] --> B[LLM extracts structured fields]
+    B --> C[Date and duplicate checks]
+    C --> D[AI agent researches company with sources]
+    D --> E[Employee count from Wikipedia, no AI]
+    E --> F[Rule-based score and 4 grades]
+    F --> G[Offer suggestion from sample catalog]
+    G --> H[Lead card e-mail to the salesperson]
+    H -.-> I[(Google Sheet log)]
+```
+
+Plausibility checks in code flag unverified contacts, possible duplicates, invented-looking sources and research that may describe a different company. The scoring is a first proposal that still needs calibration with real sales outcomes. [Read the code and test learnings](https://github.com/SittanBon/trade-fair-assistant).
+
 ## Prompt Smash! — public application flow
 
 The four learning journeys share one React and TypeScript interaction engine. A pure assembler turns the learner's answers into the live prompt; required Goal and Task fields must be present before copy or download.
